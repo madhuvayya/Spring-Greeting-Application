@@ -20,7 +20,7 @@ public class GreetingController {
         return "Hello";
     }
 
-    @PostMapping("/user")
+    @PostMapping("/addUser")
     public String addUser(@RequestBody User user){
         if(userDao.addUser(user))
            return "hai"+ user.getName();
